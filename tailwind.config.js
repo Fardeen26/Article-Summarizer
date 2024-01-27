@@ -9,7 +9,6 @@ export default {
       fontFamily:{
         satoshi: ["Satoshi", "sans-sarif"],
         inter: ["Inter", "sans-sarif"],
-
       }
     },
   },

@@ -10,13 +10,13 @@ const Hero = () => {
         }} className="black_btn">GitHub</button>
       </nav>
 
-      <h1 className="head_text">
-        Summirize Articles With <br className="max-md:hidden"/>
+      <h1 className="head_text"> 
+      Elevate Your Reading with<br className="max-md:hidden"/>
         <span className="orange_gradient">OpenAI GPT-4</span>
       </h1>
 
       <h2 className="desc">
-        Simplyfy your reading with Summize, an open-source article summirizer that transform lengthy articles into clear and consice summiries
+      SumZ, the open-source article summarizer, turning lengthy articles into crisp, concise summaries.
       </h2>
     </header>
   )
