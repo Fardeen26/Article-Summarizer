@@ -10,15 +10,9 @@ export const articleApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: rapidApiBaseUrl,
         prepareHeaders: (headers) => {
-<<<<<<< HEAD
             headers.set('X-RapidAPI-Key', rapidApiKey);
             headers.set('X-RapidAPI-Host', rapidApiHost);
 
-=======
-            headers.set('X-RapidAPI-Key', '');
-            headers.set('X-RapidAPI-Host', '');
-            
->>>>>>> bf94d65f00ccb46a27f163e03005d952a1f1dc4e
             return headers;
         }
     }),
