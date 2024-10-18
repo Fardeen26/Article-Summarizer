@@ -7,6 +7,7 @@ const Demo = () => {
     url: "",
     summary: "",
   });
+
   const [allArticles, setAllArticles] = useState([]);
   const [copied, setCopied] = useState("");
   const [copyArticle, setCopyArticle] = useState('');
@@ -32,6 +33,12 @@ const Demo = () => {
       setArticle(newArticle);
       setAllArticles(updatedAllArticles);
       localStorage.setItem('articles', JSON.stringify(updatedAllArticles));
+
+      setArticle((prevArticle) => ({
+        ...prevArticle,
+        url: "",
+      }));
+
     }
   }
 
@@ -58,7 +65,7 @@ const Demo = () => {
           <img src={linkIcon} alt="link-icon" className="absolute left-0 my-2 ml-3 w-5" />
           <input type="url" placeholder="Enter the URL" value={article.url} onChange={(e) => setArticle({ ...article, url: e.target.value })} required className="url_input peer" />
           <button type="submit" className="submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700">
-            <i class="fa-solid fa-paper-plane"></i></button>
+            <i className="fa-solid fa-paper-plane"></i></button>
 
         </form>
 
